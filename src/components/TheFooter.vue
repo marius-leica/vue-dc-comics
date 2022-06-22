@@ -45,7 +45,12 @@
           </ul>
         </div>
         <div class="col-md-6">
-          <img src="/img/dc-logo-bg.png" alt="" height="400px" />
+          <img
+            class="dc-big-logo"
+            src="/img/dc-logo-bg.png"
+            alt=""
+            height="400px"
+          />
         </div>
       </div>
     </div>
@@ -90,7 +95,17 @@ export default {
 
 <style lang="scss" scoped>
 .footer-bg {
+  position: relative;
+  overflow: hidden;
   background-image: url("/public/img/footer-bg.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.dc-big-logo {
+  position: absolute;
+  top: -6%;
+  right: 145px;
 }
 li span {
   font-size: 0.8rem;

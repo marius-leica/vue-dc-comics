@@ -3,8 +3,8 @@
     <div class="container">
       <ul class="list-unstyled d-flex justify-content-between">
         <li
-          v-for="link in blueBannerLinks"
-          :key="link"
+          v-for="(link, i) in blueBannerLinks"
+          :key="i"
           class="d-flex align-items-center"
         >
           <img :src="link.url" alt="" width="40px" height="50px" />

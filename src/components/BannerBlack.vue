@@ -3,7 +3,7 @@
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
         <div>
-          <button type="button" class="btn btn-outline-primary">
+          <button type="button" class="btn btn-outline-primary my-button">
             SIGN-UP NOW!
           </button>
         </div>
@@ -16,7 +16,7 @@
               align-items-center
             "
           >
-            <li class="p-4 text-primary">FOLOW US</li>
+            <li class="p-4 text-primary fw-bold">FOLOW US</li>
             <li class="m-3">
               <a href="#"> <img src="/img/footer-facebook.png" alt="" /></a>
             </li>
@@ -55,5 +55,8 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.my-button {
+  border-radius: 0px;
+}
 </style>

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light p-0">
       <div class="container d-flex justify-space-betwen">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand p-0" href="#">
           <img src="/img/dc-logo.png" alt="" width="50" height="50" />
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -46,6 +46,11 @@ export default {
 <style lang="scss" scoped>
 a.nav-link:hover {
   color: blue;
-  border-bottom: 1px solid blue;
+  border-bottom: 4px solid blue;
+}
+
+.nav-link {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 </style>
