@@ -27,13 +27,7 @@ export default {
     comicType: String,
   }
 };
-methods: {
-  //creare una function che cambia l'imagine on hover
-  coverChange() {
-    this.urlImg = "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/09/AV1976_01_300-001_HD_5f738f6e39ddd7.18205602.jpg?itok=VgdYdJ01";
 
-  }
-},
 
 </script>
 
