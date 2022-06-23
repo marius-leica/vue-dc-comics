@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "assets/scss/main.scss";
+@import "./assets/scss/main.scss";
 
 #app {
   font-family: "Asap Condensed", sans-serif;

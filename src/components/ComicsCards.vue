@@ -4,19 +4,10 @@
       <div class="pt-5 pb-2 px-1">
         <div class="row">
           <div class="col-md-2" v-for="(comic, i) in comicsList" :key="i">
-            <div class="card-comic">
-              <div class="comic-img">
-                <img :src="comic.thumb" :alt="`Cover image of ${comic}`" />
-              </div>
-              <div class="comic-text py-2 text-start text-light">
-                <span class="card-title pb-3 text-uppercase">
-                  {{ comic.series }}
-                </span>
-              </div>
-            </div>
+            <SingleCard :comic-title="comic.series" :url-img="comic.thumb" :comic-price="comic.price"
+              :comic-type="comic.type"></SingleCard>
           </div>
         </div>
-
         <div>
           <button type="button" class="btn btn-primary my-button">
             LOAD MORE
@@ -28,8 +19,12 @@
 </template>
 
 <script>
+import SingleCard from "./SingleCard.vue";
 export default {
   name: "ComicsCards",
+  components: {
+    SingleCard,
+  },
   data() {
     return {
       comicsList: [
@@ -120,23 +115,10 @@ export default {
       ],
     };
   },
-  components: {},
 };
 </script>
 
 <style lang="scss" scoped>
-.card-comic {
-  margin-bottom: 0.5rem;
-  &:hover {
-    box-shadow: 0px 0px 10px #000;
-    transition: all 0.3s ease-in-out;
-  }
-}
-.comic-img {
-  aspect-ratio: 1/1;
-  overflow: hidden;
-}
-
 .my-button {
   border-radius: 0;
   padding-left: 2rem;
